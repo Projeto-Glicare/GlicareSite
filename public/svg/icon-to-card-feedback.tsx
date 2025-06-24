@@ -1,5 +1,5 @@
-export default function IconToCardFeedback() {
-  return ( 
+export default function IconToCardFeedback({}) {
+  return (
     <svg
       className="w-6 h-6"
       width="24"
