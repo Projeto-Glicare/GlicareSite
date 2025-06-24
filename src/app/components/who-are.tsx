@@ -111,6 +111,15 @@ const collaborators: ICollaborators[] = [
     image: "/image/collaborators/Thomaz-Victor.jpg",
     development: true,
   },
+  {
+    id: 12,
+    name: "Hendrick Menacho",
+    function: "Desenvolvedor FullStack",
+    linkedin: "https://www.linkedin.com/in/hendrickmenacho/",
+    web: "https://github.com/hendrickm97",
+    image: "/image/collaborators/hendrick-menacho.jpeg",
+    development: true,
+  },
 ];
 
 export default function WhoAre() {
@@ -150,12 +159,15 @@ export default function WhoAre() {
   };
 
   return (
-    <section id="quem-somos" className="bg-primary-gray max-w-full pb-20 lg:px-16 overflow-x-hidden">
+    <section
+      id="quem-somos"
+      className="bg-primary-gray max-w-full pb-20 lg:px-16 overflow-x-hidden"
+    >
       <div className="px-6">
-        <h2 className="text-gray-dark text-2xl md:text-28 lg:text-28 font-medium">
+        <h2 className="text-gray-dark pl-4 text-2xl md:text-28 lg:text-28 font-medium">
           Quem somos
         </h2>
-        <p className="text-secondary-gray text-xl font-normal max-w-269 md:max-w-534 lg:max-w-624 mt-6">
+        <p className="text-secondary-gray pl-4 text-xl font-normal max-w-80 md:max-w-534 lg:max-w-624 mt-6">
           Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
           Ágil, que projetamos e desenvolvemos o Glicare.
         </p>
@@ -176,27 +188,27 @@ export default function WhoAre() {
                 </div>
               </div>
               <h3 className="text-gray-dark text-center text-2xl font-medium leading-normal mt-6">
-                <span className="inline-block md:hidden">
+                <span className="inline-block lg:inline-block xl:hidden">
                   {collaborator.name.split(" ")[0]}
                 </span>
-                <br className="md:hidden" />
-                <span className="inline-block md:hidden">
+                <br className="lg:inline-block xl:hidden" />
+                <span className="inline-block xl:hidden">
                   {collaborator.name.split(" ").slice(1).join(" ")}
                 </span>
 
-                <span className="hidden md:inline-block">
+                <span className="hidden xl:inline-block">
                   {collaborator.name}
                 </span>
               </h3>
               <p className="text-secondary-gray text-center text-base font-medium leading-normal mt-3">
-                <span className="inline-block md:hidden">
+                <span className="inline-block xl:hidden">
                   {collaborator.function.split(" ")[0]}
                 </span>
-                <br className="md:hidden" />
-                <span className="inline-block md:hidden">
+                <br className="lg:block xl:hidden" />
+                <span className="inline-block xl:hidden">
                   {collaborator.function.split(" ").slice(1).join(" ")}
                 </span>
-                <span className="hidden md:inline-block">
+                <span className="hidden xl:inline-block">
                   {collaborator.function}
                 </span>
               </p>
