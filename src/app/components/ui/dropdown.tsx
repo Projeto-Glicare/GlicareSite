@@ -17,7 +17,7 @@ export default function DropDown({
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth > 1024);
+      setIsLargeScreen(window.innerWidth > 768);
     };
 
     checkScreenSize();
@@ -31,12 +31,12 @@ export default function DropDown({
     openDescription || isLargeScreen ? title : limitChar(title, titleLimit);
 
   return (
-    <div className={`bg-${background} rounded-xl py-5 px-6 break-words`}>
+    <div className={`bg-${background} rounded-xl py-5 px-6 break-words w-full`}>
       <div
         onClick={() => setOpenDescription(!openDescription)}
         className="cursor-pointer flex items-center gap-x-5 h-6"
       >
-        <h1>{displayedTitle}</h1>{" "}
+        <h1 className="text-xl font-medium">{displayedTitle}</h1>{" "}
         <span
           className={`ml-auto transition-transform duration-200 ease-out ${
             openDescription ? "rotate-180" : ""
@@ -47,11 +47,11 @@ export default function DropDown({
       </div>
       <div
         className={`overflow-hidden transition-all duration-500 ease-out ${
-          openDescription ? "h-32 opacity-100" : "max-h-0 opacity-0"
+          openDescription ? "h-16 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="h-full overflow-y-auto">
-          <p className="text-sm pt-4 pr-2">{description}</p>
+          <p className="text-lg pt-2 pr-2">{description}</p>
         </div>
       </div>
     </div>

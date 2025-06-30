@@ -82,13 +82,32 @@ export default function Contact() {
 
           <div className="flex justify-center gap-5 mt-42  md:hidden">
             <div className="flex items-center justify-center w-24 h-74 px-35 py-19 rounded-lg bg-white">
-              <IconPhone className="w-36 h-36 mt-2 shrink-0" />
+              <a
+                //href="tel:+5512345678901"
+                onClick={openModal}
+                className="text-blue-dark text-center text-md xl:text-xl font-semibold xl:ml-6 hover:text-blue-500 hover:underline"
+              >
+                <IconPhone className="w-36 h-36 mt-2 shrink-0" />
+              </a>
             </div>
             <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
-              <IconWhatsApp className="shrink-0" />
+              <a
+                //href="https://wa.me/5512345678901"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={openModal}
+                className="gap-2 px-6 py-4 rounded-lg"
+              >
+                <IconWhatsApp className="shrink-0" />
+              </a>
             </div>
             <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
-              <IconEmail className="shrink-0" />
+              <a
+                href="mailto:contato@glicare.com"
+                className="text-blue-dark text-md xl:text-xl font-semibold hover:text-blue-500 hover:underline"
+              >
+                <IconEmail className="shrink-0" />
+              </a>
             </div>
           </div>
         </div>

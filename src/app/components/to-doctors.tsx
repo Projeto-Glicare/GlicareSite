@@ -10,17 +10,18 @@ const questionsToDoctor: IQuestions[] = [
     id: 1,
   },
   {
-    question: "📝 Questionário de Perfil Rápido",
-    response:
-      "Identifique o perfil de cada paciente com um questionário simples, mas completo, para orientar seu cuidado.",
-    id: 2,
-  },
-  {
     question: "🔔 Alertas Personalizados",
     response:
       "Envie lembretes automaticos para seus pacientes sobre medicamentos, exames ou consultas.",
+    id: 2,
+  },
+  {
+    question: "📝 Questionário de Perfil Rápido",
+    response:
+      "Identifique o perfil de cada paciente com um questionário simples, mas completo, para orientar seu cuidado.",
     id: 3,
   },
+
   {
     question: "📤 Exportação de Dados Simplificada",
     response:
@@ -28,10 +29,16 @@ const questionsToDoctor: IQuestions[] = [
     id: 4,
   },
   {
+    question: "📊 Acesso a Prontuários Completo",
+    response:
+      "Visualize e atualize os dados dos seus pacientes em poucos cliques, facilitando ajustes no tratamento.",
+    id: 5,
+  },
+  {
     question: "🆘 Botão de emergência",
     response:
       "Receba alertas imediatos se um paciente acionar o botão de emergência.",
-    id: 5,
+    id: 6,
   },
 ];
 
@@ -56,8 +63,10 @@ export default function ToDoctors() {
               Para profissionais da saúde
             </h2>
             <p className="text-secondary-gray pr-8 md:pr-4">
-              Médicos e nutricionistas podem acompanhar de perto o dia-a-dia do
-              paciente e ter rápido acesso ao prontuário e rotina do usuário.
+              O Glicare foi desenvolvido para{" "}
+              <strong> ajudar médicos, nutricionistas</strong> e outros
+              profissionais da saúde a monitorar seus pacientes de forma
+              eficiente e personalizada.
             </p>
           </div>
           <div className="flex flex-col gap-4 px-6 pb-10">

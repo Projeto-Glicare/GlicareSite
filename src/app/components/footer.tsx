@@ -29,10 +29,11 @@ export default function Footer() {
       </ul>
 
       <p className="pr-6 pb-12 pl-4 md:w-430 lg:w-700 md:col-span-1 md:pb-0 md:pr-20 md:row-span-1">
-        O Glicare é um aplicativo dedicado à pacientes de diabetes do tipo 2 e
-        médicos, nutricionistas e demais profissionais da saúde que desejam
-        maior simplicidade, praticidade e facilidade no acompanhamento, controle
-        e evolução da doença e sintomas.
+        O Glicare é um aplicativo desenvolvido para simplificar o cuidado com o
+        diabetes. Pacientes, médicos, nutricionistas e outros profissionais de
+        saúde encontram aqui uma forma prática e acessível de acompanhar a
+        evolução da doença, monitorar sintomas e promover mais qualidade de
+        vida.
       </p>
 
       <p className="pb-24 pl-4 md:col-span-2 md:pb-11">2025 © Glicare</p>
