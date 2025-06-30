@@ -167,9 +167,19 @@ export default function WhoAre() {
         <h2 className="text-gray-dark pl-4 text-2xl md:text-28 lg:text-28 font-medium">
           Quem somos
         </h2>
-        <p className="text-secondary-gray pl-4 text-xl font-normal max-w-80 md:max-w-534 lg:max-w-624 mt-6">
-          Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
-          Ágil, que projetamos e desenvolvemos o Glicare.
+        <p className="text-secondary-gray pl-4 text-xl font-normal max-w-80 md:max-w-534 lg:max-w-800 mt-6">
+          Junte-se a nós nessa jornada!
+          <span className="hidden md:inline"> 🚀</span> <br />
+          <br />
+          Somos o Time de Voluntários, criadores do Glicare! Uma plataforma que
+          simplifica o monitoramento da glicemia, dando mais autonomia e
+          qualidade de vida a quem convive com diabetes.
+          <br />
+          <br /> Com tecnologia intuitiva, registro fácil de dados e insights
+          úteis, transformamos o autocuidado em uma rotina mais leve. <br />
+          <br />
+          Vamos juntos fazer a diferença?{" "}
+          <span className="hidden md:inline"> 💙</span>
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 export default interface IQuestions {
-    question: string;
-    response: string;
-    id: number;
+  question: string;
+  response: string;
+  id: number;
 }

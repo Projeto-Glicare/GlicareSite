@@ -1,5 +1,6 @@
+"use client";
+
 import IconToCardFeedback from "@/public/svg/icon-to-card-feedback";
-import FeedbackCarrosel from "@/app/components/feedback-carrosel";
 import IUsersFeedback from "@/app/models/feedback.interface";
 
 const usersFeedback: IUsersFeedback[] = [
@@ -24,6 +25,7 @@ const usersFeedback: IUsersFeedback[] = [
     img: "/image/img-ana.jpeg",
   },
 ];
+
 export default function Feedback() {
   return (
     <section id="depoimentos">
@@ -37,11 +39,12 @@ export default function Feedback() {
             rotina e o controle da diabetes.
           </p>
         </div>
+
         <div className="hidden xl:flex justify-center gap-16">
           {usersFeedback.map((feedback) => (
             <div
               key={feedback.id}
-              className="flex flex-col w-336 h-96 justify-center items-center text-center gap-6 p-6 rounded-2xl bg-white font-inter"
+              className="flex flex-col w-336 justify-center items-center text-center gap-6 p-6 rounded-2xl bg-white font-inter"
             >
               <IconToCardFeedback />
               <div className="h-20 flex items-center px-4 md:px-8">
@@ -60,7 +63,27 @@ export default function Feedback() {
             </div>
           ))}
         </div>
-        <FeedbackCarrosel />
+
+        <div className="xl:hidden flex flex-col gap-6 px-4">
+          {usersFeedback.map((feedback) => (
+            <div key={feedback.id} className="w-full max-w-md mx-auto">
+              <div className="flex flex-col justify-center items-center text-center gap-4 p-6 rounded-2xl bg-white font-inter shadow-sm w-180 h-90">
+                <IconToCardFeedback />
+                <p className="font-normal text-gray-dark text-base px-6">
+                  {feedback.feedback}
+                </p>
+                <img
+                  src={feedback.img}
+                  alt="Feedback-img"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <p className="font-normal text-base text-secondary-gray">
+                  {feedback.user}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
