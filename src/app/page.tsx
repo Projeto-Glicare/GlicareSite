@@ -7,6 +7,7 @@ import WhoAre from "@/app/components/who-are";
 import CallToDownloadSecondary from "@/app/components/call-to-download-secondary";
 import Feedback from "@/app/components/feedback";
 import StoresDownload from "./components/stores-download";
+import AdBanner from "./components/ui/ad-banner";
 
 export default function Home() {
   return (
@@ -15,11 +16,16 @@ export default function Home() {
       <ToPacients />
       <ToDoctors />
       <Feedback />
+      <AdBanner
+        dataAdSlot="5697690360"
+        dataAdFormat="auto"
+        dataFullWidthResponsive={true}
+      />
       <CallToDownloadSecondary />
       <About />
       <Contact />
       <WhoAre />
-      <StoresDownload/>
+      <StoresDownload />
     </main>
-  )
+  );
 }

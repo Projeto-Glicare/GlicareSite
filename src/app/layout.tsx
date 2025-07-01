@@ -7,6 +7,8 @@ import Footer from "./components/footer";
 import CookieModal from "./components/cookie-modal";
 import { Suspense } from "react";
 import GoogleAnalytics from "./components/google-analytics";
+import AdSense from "./components/adsense";
+import AdBanner from "./components/ui/ad-banner";
 
 export const metadata: Metadata = {
   title: "Glicare",
@@ -20,12 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <AdSense publisherId={process.env.NEXT_PUBLIC_PUBLISHER_ID!} />
+      </head>
       <body>
         <Suspense fallback={null}>
           <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID!} />
         </Suspense>
         <Header />
         {children}
+        <AdBanner
+          dataAdSlot="9636951285"
+          dataAdFormat="auto"
+          dataFullWidthResponsive={true}
+        />
         <Footer />
         <CookieModal />
       </body>
