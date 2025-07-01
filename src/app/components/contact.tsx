@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
 
           <div className="hidden md:flex flex-col md:flex-row gap-6 mt-16 lg:justify-center">
-            <div className="w-224 xl:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <div className="w-224 xl:w-336 h-310 flex-shrink-0 bg-background shadow-md rounded-2xl p-6 text-center hidden md:block">
               <IconPhone className="mx-auto mt-34 bg-white" />
               <h3 className="font-medium text-lg text-gray-dark mt-6 mb-68">
                 Nos contate diretamente
@@ -47,7 +47,7 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="w-224 xl:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <div className="w-224 xl:w-336 h-310 shadow-md flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
               <IconWhatsApp className="mx-auto mt-34 bg-white" />
               <h3 className="font-medium text-lg text-gray-dark mt-6 mb-16">
                 Nos chame no WhatsApp
@@ -66,7 +66,7 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="w-224 xl:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <div className="w-224 xl:w-336 h-310 flex-shrink-0 shadow-md bg-background rounded-2xl p-6 text-center hidden md:block">
               <IconEmail className="mx-auto mt-34 bg-white" />
               <h3 className="font-medium text-lg text-gray-dark mt-6 mb-68">
                 Entre em contato pelo e-mail

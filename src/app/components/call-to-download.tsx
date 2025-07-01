@@ -67,7 +67,10 @@ export default function CallToDownload() {
               </div>
             </div>
             <div className="lg:hidden pb-10">
-              <Button classAttributes="bg-primary w-full hover:bg-blue-700 ">
+              <Button
+                onClick={openModal}
+                classAttributes="bg-primary w-full hover:bg-blue-700 "
+              >
                 Baixe o Glicare
               </Button>
             </div>
