@@ -12,19 +12,19 @@ export default function Footer() {
 
       <ul className="flex flex-col gap-y-5 pb-16 pl-4 md:pl-0 font-medium max-w-40 md:col-span-1 md:row-span-2 md:justify-self-center md:pt-40">
         <li>
-          <a href="">Nosso aplicativo</a>
+          <a href="#app">Nosso aplicativo</a>
         </li>
         <li>
-          <a href="">Depoimentos</a>
+          <a href="#depoimentos">Depoimentos</a>
         </li>
         <li>
-          <a href="">Sobre diabetes</a>
+          <a href="#sobre">Sobre diabetes</a>
         </li>
         <li>
-          <a href="">Contatos</a>
+          <a href="#contatos">Contatos</a>
         </li>
         <li>
-          <a href="">Quem somos</a>
+          <a href="#quem-somos">Quem somos</a>
         </li>
       </ul>
 

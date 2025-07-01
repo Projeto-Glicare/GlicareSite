@@ -57,7 +57,7 @@ export default function ToDoctors() {
           />
         </span>
 
-        <div className="lg:pr-4">
+        <div className="lg:pr-2">
           <div className="pt-6 pl-6 pb-9 pr-14">
             <h2 className="font-medium text-2xl text-primary pb-4">
               Para profissionais da saúde
