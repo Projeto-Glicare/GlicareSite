@@ -32,6 +32,7 @@ export default function RootLayout({
         <Header />
         {children}
         <AdBanner
+          dataAdClient={process.env.NEXT_PUBLIC_PUBLISHER_ID!}
           dataAdSlot="9636951285"
           dataAdFormat="auto"
           dataFullWidthResponsive={true}

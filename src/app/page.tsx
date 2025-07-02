@@ -17,6 +17,7 @@ export default function Home() {
       <ToDoctors />
       <Feedback />
       <AdBanner
+        dataAdClient={process.env.NEXT_PUBLIC_PUBLISHER_ID!}
         dataAdSlot="5697690360"
         dataAdFormat="auto"
         dataFullWidthResponsive={true}
