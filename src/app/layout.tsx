@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import CookieModal from "./components/cookie-modal";
 import { Suspense } from "react";
 import GoogleAnalytics from "./components/google-analytics";
+import AdSense from "./components/adsense";
 import AdBanner from "./components/ui/ad-banner";
 
 export const metadata: Metadata = {
@@ -22,11 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3267611734638856"
-          crossOrigin="anonymous"
-        ></script>
+        <AdSense publisherId={process.env.NEXT_PUBLIC_PUBLISHER_ID!} />
       </head>
       <body>
         <Suspense fallback={null}>
