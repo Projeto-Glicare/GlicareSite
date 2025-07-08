@@ -7,7 +7,7 @@ import WhoAre from "@/app/components/who-are";
 import CallToDownloadSecondary from "@/app/components/call-to-download-secondary";
 import Feedback from "@/app/components/feedback";
 import StoresDownload from "./components/stores-download";
-import AdBanner from "./components/ui/ad-banner";
+//import AdBanner from "./components/ui/ad-banner";
 
 export default function Home() {
   return (
@@ -16,12 +16,12 @@ export default function Home() {
       <ToPacients />
       <ToDoctors />
       <Feedback />
-      <AdBanner
+      {/* <AdBanner
         dataAdClient={process.env.NEXT_PUBLIC_PUBLISHER_ID!}
         dataAdSlot="5697690360"
         dataAdFormat="auto"
         dataFullWidthResponsive={true}
-      />
+      /> */}
       <CallToDownloadSecondary />
       <About />
       <Contact />
