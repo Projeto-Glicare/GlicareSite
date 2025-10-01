@@ -24,9 +24,12 @@ export default function CallToDownload() {
           <div className="flex flex-col justify-between px-4 pt-10 gap-16 text-center h-full md:pl-16 md:pr-16 lg:pl-4 lg:items-center lg:flex-row lg:text-start">
             <div className="flex flex-col lg:gap-6 font-inter lg:px-10  ">
               <div className="flex flex-col gap-4">
-                <h1 className="font-medium py-2 text-4xl text-blue-dark md:text-6xl lg:text-6xl/tight lg:text-center xl:text-start xl:w-480">
+                <a
+                  href="#junte-se"
+                  className="font-medium py-2 text-4xl text-blue-dark md:text-6xl lg:text-6xl/tight lg:text-center xl:text-start xl:w-480"
+                >
                   Seu controle da diabetes muito mais simples!
-                </h1>
+                </a>
                 <p className="font-normal text-gray-dark text-xl md:ml-16 xl:ml-0 md:w-568 lg:w-480 lg:text-center xl:text-start">
                   Se alimente nos horários certos, registre o histórico da sua
                   glicemia e configure lembretes para medir a glicose.
