@@ -8,7 +8,7 @@ import CookieModal from "./components/cookie-modal";
 import { Suspense } from "react";
 import GoogleAnalytics from "./components/google-analytics";
 import AdSense from "./components/adsense";
-import AdBanner from "./components/ui/ad-banner";
+//import AdBanner from "./components/ui/ad-banner";
 
 export const metadata: Metadata = {
   title: "Glicare",
@@ -31,12 +31,12 @@ export default function RootLayout({
         </Suspense>
         <Header />
         {children}
-        <AdBanner
+        {/* <AdBanner
           dataAdClient={process.env.NEXT_PUBLIC_PUBLISHER_ID!}
           dataAdSlot="9636951285"
           dataAdFormat="auto"
           dataFullWidthResponsive={true}
-        />
+        />  */}
         <Footer />
         <CookieModal />
       </body>

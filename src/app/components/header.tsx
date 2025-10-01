@@ -37,7 +37,7 @@ export default function Header() {
               <a href="#app">Nosso aplicativo</a>
             </li>
             <li className="hover:text-blue-500 ">
-              <a href="#depoimentos">Depoimentos</a>
+              <a href="#junte-se">Entre na comunidade</a>
             </li>
             <li className="hover:text-blue-500 ">
               <a href="#sobre">Sobre diabetes</a>
